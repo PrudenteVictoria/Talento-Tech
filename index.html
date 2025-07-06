@@ -13,18 +13,18 @@
 <body>
     <header> 
         <div>
-            <button class="button">Tickets</button>
+            <button class="button" onclick="window.location.href='entradas.html'">Tickets</button>
         </div>
 <!-- logo -->
         <div class="logo">
-            <a href="#home"><img src="imagenes/logo.png" alt="t" width="12%"></a>
+            <a href="#home"><img src="imagenes/logo.png" alt="PlayBounce" width="12%"></a>
         </div>
 <!-- barra de nav -->
         <nav> 
             <ul>
-                <li><a href="">Inflables</a>
-                <li><a href="">Nosotros</a></li>
-                <Li><a href="">Contacto</a></Li>
+                <li><a href="inflables.html">Inflables</a>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <Li><a href="contacto.html">Contacto</a></Li>
             </ul>
         </nav>
     </header>
@@ -35,22 +35,22 @@
             <div class="info">
                 <h2 class="title">PlayBounce</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate necessitatibus quis, voluptatibus corrupti repudiandae quisquam! Velit id soluta architecto quas harum sequi dicta ut fugit. Dolore necessitatibus eligendi quibusdam illo!</p>
-                <a href=""><button class="button">Conseguí tus tickets acá</button></a>
+                <button class="button" onclick="window.location.href='entradas.html'">Conseguí tus tickets acá</button>
             </div>
         </section>
 <!-- presentacion producto-->
         <section class="presentacion">
             <figure>
-                <img src="imagenes/presentacion.gif" alt="prueba" width="600px">
+                <img src="imagenes/presentacion.gif" alt="PlayBounce" width="600px">
             </figure>
             <div class="info">
                 <h1 class="title">Circuitos</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatem blanditiis quo error rem aliquid repellendus eveniet eius, magnam soluta eligendi quidem numquam labore ullam doloremque expedita maxime praesentium architecto.</p>
-                <a href=""><button class="button_dos">Mirá nuestras atracciones</button></a>
+                <button class="button_dos" onclick="window.location.href='inflables.html'">Mirá nuestras atracciones</button>
             </div>
         </section>
         <div>
-            <img src="imagenes/h.png" alt="" width=100%> 
+            <img src="imagenes/h.png" alt="diversión" width=100%> 
         </div>
 
 <!-- CARDS nosotros -->
@@ -78,30 +78,56 @@
                 </div>
                 <div class="card card3">
                     <p class="title_card">Objetivo</p>
-                    <p>En PlayBounce 
-                        creemos en la 
-                        diversión sin límites.
-                        Creamos espacios 
-                        únicos donde saltar es 
-                        solo el comienzo de una 
-                        gran aventura.</p>
+                    <p>Queremos que 
+                        cada visita sea 
+                        inolvidable. Nuestro 
+                        objetivo es que los 
+                        chicos vivan momentos 
+                        mágicos que queden 
+                        para siempre.</p>
                 </div>
             </div>
-            <a href=""><button class="button">Conseguí tus tickets acá</button></a>
+            <button class="button" onclick="window.location.href='nosotros.html'">Ver más</button>
+        </section>
+
+
+<!-- Ubicación -->
+
+        <section >
+            <div class="ubicacion">   
+                <h3><img src="imagenes/mapa.png" alt="ubicacion" width="10%" >¿Dónde estamos?</h3>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6571.37771483652!2d-58.51594779501205!3d-34.561432507680124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb700217182ff%3A0xf03703563e414fcc!2sTECNOPOLIS!5e0!3m2!1ses!2sar!4v1751595204282!5m2!1ses!2sar" 
+                allowfullscreen="" loading="lazy" title="Ubicación del parque PlayBounce en Google Maps"></iframe>
+            </div>
+            <div class="line"><p>Avenida General Paz, Guillermo Manso &, Villa Martelli, Cdad. Autónoma de Buenos Aires</p></div>
+        </section>
+
+<!-- newsletter -->
+        <section class="newsletter">
+            <div>
+                <p class="title">Suscríbete para ver nuestras últimas noticias.</p>
+                <div>
+                    <form autocomplete="off" action="" method="post">
+                    <input type="email" name="email" placeholder="ejemplo@example.com"  class="input">
+                    <button type="submit" class="button">enviar</button>
+                    </form>
+                </div>
+                <!-- redes -->
+                <div>
+                  <ul>
+                    <li><a href="https://x.com/?lang=es"><img src="imagenes/x.png" alt="Twitter/X"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="imagenes/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="imagenes/youtube.png" alt="YouTube"></a></li>
+                  </ul>
+                </div>
+            </div>
         </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
+<!-- 
         <section>
             <article>
                 <h3 class="title">CARRUSEL </h3>
@@ -137,7 +163,7 @@
                 </figure>
             </article>
         </section>
-        
+         -->
 
 
 
@@ -183,43 +209,36 @@
         </article>
     </main> -->
 
+
+
     <!-- footer grid -->
     <footer>
-        <div>
+        <div class="footerContent">
             <!-- info -->
             <div>
-                <p>Contacto</p>
+                <p class="bold">Contacto</p>
                 <p>+549 11 1234 5678</p>
-                <p>info@</p>
-                <p>260 Howard Ave, NY</p>
-            </div>
-
-            <!-- news -->
+                <p>info@playbounce.com</p>
+                <p>Villa Martelli, CABA</p>
+            </div>   
             <div>
-                <p>Suscríbete</p>
-                <div>
-                    <form autocomplete="off" action="" method="post">
-                    <input type="email" name="email" placeholder="ejemplo@example.com">
-                    <button type="submit" >enviar</button>
-                    </form>
-                </div>
+                <p class="bold">INFROMACIÓN</p>      
+                <ul>
+                    <li><a href="">FAQS</a></li>
+                    <li><a href="">Política de Privacidad</a></li>
+                    <li><a href="">Política climatológica</a></li>
+                </ul>
             </div>
-            
-            <!-- redes -->
             <div>
-                <p>Síguenos</p>
-                <div>
-                    <ul>
-                        <li><span><a href="https://www.facebook.com/"><i>Facebook</i></a></span></li>
-                        <li><span><a href="https://x.com/?lang=es"><i>Twitter</i></a></span></a></li>
-                        <li><span><a href="https://www.instagram.com/"><i></i>Instragram</a></span></li>
-                        <li><span><a href="https://www.youtube.com/"><i>Youtube</i></a></span></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><a href="inflables.html">Inflables</a>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <Li><a href="contacto.html">Contacto</a></Li>
+                </ul>
             </div>
-            <div><p>Copyright - 2025. Todos los derechos reservados.</p></div>
         </div>
- 
+        <div><p>Copyright - 2025. Todos los derechos reservados.</p></div>
+
     </footer>
 
 

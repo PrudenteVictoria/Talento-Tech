@@ -15,8 +15,8 @@ header {
     align-items: center;
     justify-content: space-between;
     position: fixed;
-      transition: transform 0.4s ease; /* transición más lenta y fluida */
-
+    transition: transform 0.4s ease; 
+    z-index: 1000;
 }
 
 .ocultar-header {
@@ -25,7 +25,7 @@ header {
 
 .logo {
     position: absolute;
-    top: 5px; /* hace que sobresalga hacia arriba */
+    top: 5px; 
     left:43%;
 }
 
@@ -36,14 +36,14 @@ nav ul {
 
 }
 
-nav ul li{
+ul li{
     list-style: none;
     font-family: "Playpen Sans Deva";
     font-weight: 900;
     font-size: 1.1rem; 
 }
 
-nav ul li a{
+ul li a{
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -78,6 +78,7 @@ nav ul li a:hover::after {
     font-weight: 900;
     font-size: 3rem; 
     letter-spacing: 1px;
+    line-height: 1.2;
     margin: 0;
     color: white;
 }
@@ -139,7 +140,7 @@ main {
     background-image: url("imagenes/background.png");
     background-size: contain;
     background-repeat: round;
-    padding-top: 6rem;
+    padding-top: 8rem;
     display: flex;
     justify-content: center;
     gap: 6rem;
@@ -148,6 +149,10 @@ main {
 
 .presentacion figure{
     padding-top: 5rem;
+}
+
+.presentacion p{
+    padding-top: 3rem !important;
 }
 
 .button_dos {
@@ -209,7 +214,8 @@ main {
 }
 
 .cards p{
-    padding: 1.6rem;
+    padding-bottom: 1.6rem;
+    padding-left: 1.6rem;
     width: 40%;
     font-size: 0.8rem;
     font-family: "Playpen Sans Deva";
@@ -217,6 +223,7 @@ main {
 }
 
 .title_card{
+    margin-bottom: 0.8rem;
     font-weight: bold;
     font-size:1.1rem !important;
     color:#fff5ac ;
@@ -266,8 +273,154 @@ main {
 }
 
 .card:hover {
-  transform: scale(1.03); /* zoom suave */
-  box-shadow: 0 12px 28px rgba(79, 79, 79, 0.9);
-  cursor: pointer;
-  filter: brightness(1.05);
+    transform: scale(1.03); 
+    box-shadow: 0 12px 28px rgba(79, 79, 79, 0.9);
+    filter: brightness(1.05);
+}
+
+/* ----------------------------------------------------------------------------------------- */
+.ubicacion{
+    background-color: #0C91E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.ubicacion h3, .line p{
+    font-family: "Playpen Sans Deva";
+    color: #FAF5ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.mapa {
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+.line {
+    background-color: #0C91E6;
+    padding: 2rem;
+}
+/* ---------------------------------------------------------------------------------------- */
+.newsletter{
+    margin: 0;
+    background-image: url(imagenes/newsletter.png);
+    background-size:cover;
+    width: 100%;
+    height: 30rem;
+}
+
+.newsletter div{
+    padding: 3rem 2rem;
+    width: 50%;
+}
+
+.newsletter div div{
+    padding: 0;
+    width: 100%;
+}
+
+.newsletter button{
+    background-color: #F8E505 !important;
+    color: #000;
+    box-shadow: rgb(201, 196, 46) 0px 10px 0px 0px;
+    margin-left: 1rem;
+}
+
+.newsletter button:hover{
+    box-shadow: rgb(201, 188, 46) 0px 7px 0px 0px;
+}
+
+.newsletter button:active {
+    background-color: rgb(255, 252, 56);
+    box-shadow: rgb(196, 201, 46) 0px 0px 0px 0px;
+}
+
+.input {
+    margin-top: 2rem;
+    width: 60%;
+    padding: 0.875rem;
+    font-size: 1rem;
+    border: 1.5px solid #000;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 3px 0 #000;
+    outline: none;
+    transition: ease 0.25s;
+}
+
+.input:focus {
+    box-shadow: 5.5px 7px 0 black;
+}
+
+.newsletter ul {
+  list-style: none;
+  display: flex;
+  gap: 5.5rem;
+  justify-content: center;
+  padding-top: 5.5rem;
+  width: 90%;
+}
+
+.newsletter ul li img {
+  width: 5rem;
+  transition: transform 0.3s;
+}
+
+.newsletter ul li img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+footer{
+    margin: 0;
+    background-image: url(imagenes/a.png);
+    background-size:cover;
+    width: 100%;
+    font-size: 1rem;
+    min-height: 20rem; 
+    font-size: 1rem;
+}
+
+footer p {
+    font-family: "Playpen Sans Deva";
+    color: white;
+}
+
+footer ul li{
+    height: 4vh;
+}
+footer a{
+    font-family: "Playpen Sans Deva";
+    font-weight: normal;
+    font-size: 1rem;
+}
+.bold{font-weight: bold;}
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    padding: 6rem 8rem 0 8rem ;
+}
+
+footer div{
+    text-align: center; padding: 2rem;
 }
