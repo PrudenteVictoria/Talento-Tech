@@ -26,7 +26,7 @@ header {
 .logo {
     position: absolute;
     top: 5px; 
-    left:43%;
+    left:46%;
 }
 
 nav ul {          
@@ -43,7 +43,7 @@ ul li{
     font-size: 1.1rem; 
 }
 
-ul li a{
+a{
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -408,7 +408,6 @@ footer ul li{
     height: 4vh;
 }
 footer a{
-    font-family: "Playpen Sans Deva";
     font-weight: normal;
     font-size: 1rem;
 }
@@ -424,3 +423,151 @@ footer a{
 footer div{
     text-align: center; padding: 2rem;
 }
+
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+
+.contacto {
+    background-color: #2F4F87;
+    padding: 7rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-contenedor {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 3rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo-contacto {
+    font-family: "Playpen Sans Deva";
+    font-size: 2.5rem;
+    color: #FF0072;
+    margin-bottom: 1rem;
+}
+
+.subtitulo-contacto {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.input-contacto {
+    padding: 0.9rem;
+    border: 2px solid #2F4F87;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 2px 3px 0px #000;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.input-contacto:focus {
+    box-shadow: 4px 5px 0px #000;
+}
+
+.textarea-contacto {
+    resize: none;
+}
+
+.enviar-contacto {
+    background-color: #F8E505 !important;
+    color: #000;
+    box-shadow: rgb(201, 196, 46) 0px 10px 0px 0px;
+}
+
+.enviar-contacto:hover {
+    box-shadow: rgb(201, 188, 46) 0px 7px 0px 0px;
+}
+
+.enviar-contacto:active {
+    background-color: rgb(255, 252, 56);
+    box-shadow: rgb(196, 201, 46) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+}
+
+
+
+/*  ------------------------------------------------------------------------------------*/
+
+.nosotros-section {
+    background-color: #FAF5ED;
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros-container {
+    max-width: 1100px;
+    text-align: center;
+    color: #2F4F87;
+}
+
+.nosotros-titulo {
+    font-family: "Playpen Sans Deva";
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #FF0072;
+}
+
+.nosotros-texto {
+    font-size: 1rem;
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 3rem;
+    padding: 0 1.5rem;
+    color: #333;
+    text-align: justify;
+}
+
+.bloques-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.bloque {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.bloque:hover {
+    transform: translateY(-5px);
+}
+
+.img-nosotros {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.bloque-titulo {
+    font-family: "Playpen Sans Deva";
+    font-size: 1.2rem;
+    color: #FF0072;
+    margin-bottom: 0.5rem;
+}
+

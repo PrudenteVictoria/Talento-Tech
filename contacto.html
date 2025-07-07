@@ -3,13 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inflables</title>
+    <title>PLAYBOUNCE - Inflables</title>
     <link rel="stylesheet" href="style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    
+    <header> 
+        <div>
+            <button class="button" onclick="window.location.href='carrito.html'">Tickets</button>
+        </div>
+<!-- logo -->
+        <div class="logo">
+            <a href="index.html"><img src="imagenes/logo.png" alt="PlayBounce" width="12%"></a>
+        </div>
+<!-- barra de nav -->
+        <nav> 
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inflables.html">Inflables</a>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <Li><a href="contacto.html">Contacto</a></Li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<!-- Formulario -->
+        <section class="contacto">
+            <div class="contacto-contenedor">
+              <h2 class="titulo-contacto">¡Contactanos!</h2>
+              <p class="subtitulo-contacto">¿Querés reservar un inflable o tenés dudas? Escribinos:</p>
+            
+              <form class="formulario-contacto" action="#" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required class="input-contacto">
+                <input type="email" name="email" placeholder="Tu email" required class="input-contacto">
+                <input type="tel" name="telefono" placeholder="Tu teléfono" class="input-contacto">
+                <textarea name="mensaje" placeholder="Escribí tu mensaje..." rows="5" required class="input-contacto textarea-contacto"></textarea>
+                <button type="submit" class="button enviar-contacto">Enviar mensaje</button>
+              </form>
+            </div>
+        </section>
+        <!-- newsletter -->
+        <section class="newsletter">
+            <div>
+                <p class="title">Suscríbete para ver nuestras últimas noticias.</p>
+                <div>
+                    <form autocomplete="off" action="" method="post">
+                    <input type="email" name="email" placeholder="ejemplo@example.com"  class="input">
+                    <button type="submit" class="button">enviar</button>
+                    </form>
+                </div>
+                <!-- redes -->
+                <div>
+                  <ul>
+                    <li><a href="https://x.com/?lang=es"><img src="imagenes/x.png" alt="Twitter/X"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="imagenes/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="imagenes/youtube.png" alt="YouTube"></a></li>
+                  </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+        <!-- footer grid -->
+    <footer>
+        <div class="footerContent">
+            <!-- info -->
+            <div>
+                <p class="bold">Contacto</p>
+                <p>+549 11 1234 5678</p>
+                <p>info@playbounce.com</p>
+                <p>Villa Martelli, CABA</p>
+            </div>   
+            <div>
+                <p class="bold">INFROMACIÓN</p>      
+                <ul>
+                    <li><a href="">FAQS</a></li>
+                    <li><a href="">Política de Privacidad</a></li>
+                    <li><a href="">Política climatológica</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="inflables.html">Inflables</a>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <Li><a href="contacto.html">Contacto</a></Li>
+                </ul>
+            </div>
+        </div>
+        <div><p>Copyright - 2025. Todos los derechos reservados.</p></div>
+
+    </footer>
+    <script>
+      let ultimoScroll = 0;
+      const header = document.querySelector("header");
+
+      window.addEventListener("scroll", () => {
+        const scrollActual = window.scrollY;
+
+        if (scrollActual > ultimoScroll && scrollActual > 50) {
+          header.classList.add("ocultar-header");
+        } else {
+          header.classList.remove("ocultar-header");
+        }
+
+        ultimoScroll = scrollActual;
+      });
+    </script>
 </body>
 </html>
