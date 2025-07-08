@@ -13,7 +13,9 @@
 <body>
     <header> 
         <div>
-            <a href="carrito.html">🛒 Pedidos</a>
+            <a href="pedido.html">
+               🛒Pedidos (<span id="contador">0</span>)                 
+            </a>
         </div>
 <!-- logo -->
         <div class="logo">
@@ -36,7 +38,7 @@
             <div class="info">
                 <h2 class="title">PlayBounce</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate necessitatibus quis, voluptatibus corrupti repudiandae quisquam! Velit id soluta architecto quas harum sequi dicta ut fugit. Dolore necessitatibus eligendi quibusdam illo!</p>
-                <button class="button" onclick="window.location.href='carrito.html'">Ver lista</button>
+                <button class="button" onclick="window.location.href='pedido.html'">Ver lista</button>
             </div>
         </section>
 <!-- presentacion producto-->
@@ -104,7 +106,8 @@
             </div>
             <div class="line"><p>Avenida General Paz, Guillermo Manso &, Villa Martelli, Cdad. Autónoma de Buenos Aires</p></div>
         </section>
-
+    </main>
+    <footer>
 <!-- newsletter -->
         <section class="newsletter">
             <div>
@@ -126,14 +129,6 @@
             </div>
         </section>
 
-
-
-
-
-
-
-    <!-- footer grid -->
-    <footer>
         <div class="footerContent">
             <!-- info -->
             <div>
@@ -158,27 +153,11 @@
                 </ul>
             </div>
         </div>
-        <div><p>Copyright - 2025. Todos los derechos reservados.</p></div>
+        <div class="bg"><p>Copyright - 2025. Todos los derechos reservados.</p></div>
 
     </footer>
 
 
-    <script>
-      let ultimoScroll = 0;
-      const header = document.querySelector("header");
-
-      window.addEventListener("scroll", () => {
-        const scrollActual = window.scrollY;
-
-        if (scrollActual > ultimoScroll && scrollActual > 50) {
-          header.classList.add("ocultar-header");
-        } else {
-          header.classList.remove("ocultar-header");
-        }
-
-        ultimoScroll = scrollActual;
-      });
-    </script>
-    <script src="script.js"></script>
+    <script src="header.js"></script>
 </body>
 </html>

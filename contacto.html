@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLAYBOUNCE - Inflables</title>
+    <title>PLAYBOUNCE - Contacto</title>
     <link rel="stylesheet" href="style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap" rel="stylesheet">
@@ -12,7 +12,9 @@
 <body>
     <header> 
         <div>
-            <button class="button" onclick="window.location.href='carrito.html'">Tickets</button>
+            <a href="pedido.html">
+               🛒Pedidos (<span id="contador">0</span>)                 
+            </a>
         </div>
 <!-- logo -->
         <div class="logo">
@@ -44,7 +46,10 @@
               </form>
             </div>
         </section>
-        <!-- newsletter -->
+    </main>
+
+    <footer>
+<!-- newsletter -->
         <section class="newsletter">
             <div>
                 <p class="title">Suscríbete para ver nuestras últimas noticias.</p>
@@ -64,9 +69,7 @@
                 </div>
             </div>
         </section>
-    </main>
-        <!-- footer grid -->
-    <footer>
+
         <div class="footerContent">
             <!-- info -->
             <div>
@@ -91,24 +94,9 @@
                 </ul>
             </div>
         </div>
-        <div><p>Copyright - 2025. Todos los derechos reservados.</p></div>
+        <div class="bg"><p>Copyright - 2025. Todos los derechos reservados.</p></div>
 
     </footer>
-    <script>
-      let ultimoScroll = 0;
-      const header = document.querySelector("header");
-
-      window.addEventListener("scroll", () => {
-        const scrollActual = window.scrollY;
-
-        if (scrollActual > ultimoScroll && scrollActual > 50) {
-          header.classList.add("ocultar-header");
-        } else {
-          header.classList.remove("ocultar-header");
-        }
-
-        ultimoScroll = scrollActual;
-      });
-    </script>
+    <script src="header.js"></script>
 </body>
 </html>

@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLAYBOUNCE - Inflables</title>
+    <title>PLAYBOUNCE - Pedido</title>
     <link rel="stylesheet" href="style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header> 
@@ -29,13 +30,18 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main>          
+        <h1 class="title-pedido">Pedido</h1>
+        <div class="contenedor-pedido">
+        <!-- Columna izquierda -->
+        <div class="pedido-lateral">
+        <section id="resume" class="resumen-pedido"></section>
+        <div id="actions" class="acciones-pedido"></div>
+        </div>
 
-        <section >
-            <h1 class="title-pedido">Hacé tu pedido ⬇️ </h1>
-            <div id="contenedor">
-            </div>
-        </section>
+        <!-- Columna derecha -->
+        <section id="contenedor" class="productos-pedido"></section>
+      </div>
     </main>
     <footer>
 <!-- newsletter -->
@@ -86,7 +92,8 @@
         <div class="bg"><p>Copyright - 2025. Todos los derechos reservados.</p></div>
 
     </footer>
+
+    <script src="pedido.js"></script>
     <script src="header.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>

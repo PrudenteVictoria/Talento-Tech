@@ -1,6 +1,7 @@
-/* INDEX PREDEF */
+/* PREDEF */
  * {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Playpen Sans Deva";
+    line-height: 1.6;
     margin: 0;                   
     padding: 0;                  
 }
@@ -43,7 +44,7 @@ ul li{
     font-size: 1.1rem; 
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -69,9 +70,49 @@ nav ul li a:hover::after {
 
 
 
+/*footer*/
 
+footer{
+    margin: 0;
+    background-image: url(imagenes/a.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    font-size: 1rem;
+    min-height: 30rem; 
+    font-size: 1rem;
+}
 
-/* ------------------------------------------------------------------------------------------------------- */
+footer p {
+    font-family: "Playpen Sans Deva";
+    color: white;
+}
+
+footer ul li{
+    height: 4vh;
+}
+footer a{
+    font-weight: normal;
+    font-size: 1rem;
+}
+.bold{font-weight: bold;}
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    padding: 6rem 8rem 0 8rem ;
+}
+
+footer div{
+    text-align: center; 
+    padding: 2rem;
+}
+
+.bg{
+    background-color: #2F4F87;
+}
+
+/* ------------------------------------------------------------INDEX--------------------------------------------------------------------- */
 
 .title {
     font-family: "Playpen Sans Deva";
@@ -135,12 +176,12 @@ main {
     transition: 200ms;
 }
 
-/* -------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------- */
 .presentacion {
     background-image: url("imagenes/background.png");
     background-size: contain;
     background-repeat: round;
-    padding-top: 8rem;
+    padding-top: 9rem;
     display: flex;
     justify-content: center;
     gap: 6rem;
@@ -191,7 +232,7 @@ main {
   opacity: 1
 }
 
-/* ------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------- */
 
 .nosotros{
     background-image: url("imagenes/backgroundcards.png");
@@ -278,7 +319,7 @@ main {
     filter: brightness(1.05);
 }
 
-/* ----------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------- */
 .ubicacion{
     background-color: #0C91E6;
     display: flex;
@@ -316,7 +357,7 @@ main {
     background-color: #0C91E6;
     padding: 2rem;
 }
-/* ---------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------- */
 .newsletter{
     margin: 0;
     background-image: url(imagenes/newsletter.png);
@@ -387,46 +428,7 @@ main {
 
 
 
-/* ---------------------------------------------------------------------------------------- */
-
-footer{
-    margin: 0;
-    background-image: url(imagenes/a.png);
-    background-size:cover;
-    width: 100%;
-    font-size: 1rem;
-    min-height: 20rem; 
-    font-size: 1rem;
-}
-
-footer p {
-    font-family: "Playpen Sans Deva";
-    color: white;
-}
-
-footer ul li{
-    height: 4vh;
-}
-footer a{
-    font-weight: normal;
-    font-size: 1rem;
-}
-.bold{font-weight: bold;}
-.footerContent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9rem;
-    padding: 6rem 8rem 0 8rem ;
-}
-
-footer div{
-    text-align: center; padding: 2rem;
-}
-
-
-
-/* ------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------CONTACTO-------------------------------------------------------------------------- */
 
 
 .contacto {
@@ -504,7 +506,7 @@ footer div{
 
 
 
-/*  ------------------------------------------------------------------------------------*/
+/*  ----------------------------------------------NOSOTROS---------------------------------------------------------------------------------------*/
 
 .nosotros-section {
     background-color: #FAF5ED;
@@ -571,3 +573,163 @@ footer div{
     margin-bottom: 0.5rem;
 }
 
+/*-------------------------------------------CARRITO--------------------------------------------------*/
+
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+
+.card-product {
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-product:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-product img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.title-product {
+    font-family: "Playpen Sans Deva";
+    font-size: 1.1rem;
+    color: #2F4F87;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.card-product p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #FF0072;
+}
+
+.card-product button {
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+    background-color: #F8E505;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: rgb(201, 196, 46) 0px 6px 0px 0px;
+}
+
+.card-product button:hover {
+    box-shadow: rgb(201, 188, 46) 0px 4px 0px 0px;
+}
+
+.card-product button:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+.title-pedido {
+    font-family: "Playpen Sans Deva";
+    font-size: 3rem;
+    color: #FF0072;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    position: relative;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+.contenedor-pedido {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.pedido-lateral {
+    flex: 1 1 300px;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.resumen-pedido p {
+    font-size: 1.1rem;
+    color: #2F4F87;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+}
+
+#resume {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.acciones-pedido button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.acciones-pedido button:nth-child(1) {
+    background-color: #FF0072;
+    color: #fff;
+    box-shadow: rgb(201, 46, 112) 0px 6px 0px 0px;
+}
+
+.acciones-pedido button:nth-child(1):hover {
+    box-shadow: rgb(201, 46, 112) 0px 4px 0px 0px;
+}
+
+.acciones-pedido button:nth-child(2) {
+    background-color: #F8E505;
+    color: #000;
+    box-shadow: rgb(201, 196, 46) 0px 6px 0px 0px;
+}
+
+.acciones-pedido button:nth-child(2):hover {
+    box-shadow: rgb(201, 188, 46) 0px 4px 0px 0px;
+}
+
+.acciones-pedido button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.productos-pedido {
+    flex: 2 1 600px;
+}
+
+.mensaje-vacío {
+    font-size: 1.1rem;
+    color: #999;
+    text-align: left;
+    margin-top: 2rem;
+    font-style: italic;
+}

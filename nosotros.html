@@ -12,7 +12,9 @@
 <body>
     <header> 
         <div>
-            <button class="button" onclick="window.location.href='carrito.html'">Tickets</button>
+            <a href="pedido.html">
+               🛒Pedidos (<span id="contador">0</span>)                 
+            </a>
         </div>
 <!-- logo -->
         <div class="logo">
@@ -85,6 +87,8 @@
             </div>
             
         </section>
+    </main>    
+    
     <!-- newsletter -->
         <section class="newsletter">
             <div>
@@ -105,7 +109,7 @@
                 </div>
             </div>
         </section>
-    </main>
+
 
     <!-- footer grid -->
     <footer>
@@ -138,21 +142,6 @@
     </footer>
 
 
-    <script>
-      let ultimoScroll = 0;
-      const header = document.querySelector("header");
-
-      window.addEventListener("scroll", () => {
-        const scrollActual = window.scrollY;
-
-        if (scrollActual > ultimoScroll && scrollActual > 50) {
-          header.classList.add("ocultar-header");
-        } else {
-          header.classList.remove("ocultar-header");
-        }
-
-        ultimoScroll = scrollActual;
-      });
-    </script>   
+    <script src="header.js"></script>
 </body>
 </html>
